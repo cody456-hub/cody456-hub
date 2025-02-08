@@ -2,13 +2,13 @@ size = int(input("Input Addition Table Size smaller 10:"))
 
 print("------------------------------------------------------------")
 
-for i in range(1, size + 1 ):
-    for j in range(1, size + 1 ):
-        sum = i + j        
+for a in range(1, size + 1 ):
+    for b in range(1, size + 1 ):
+        sum = a + b        
         if sum < 10 :
-            print(f"{i} + {j} = {sum}  ", end=" ")
+            print(f"{a} + {b} = {sum}  ", end=" ")
         else:
-            print(f"{i} + {j} = {sum} ", end=" ")
+            print(f"{a} + {b} = {sum} ", end=" ")
     print()
 
 print("------------------------------------------------------------")
