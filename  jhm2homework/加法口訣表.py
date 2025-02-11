@@ -1,12 +1,9 @@
-size = int(input("Input Addition Table Size smaller 10:"))
+# 讀取使用者輸入的加法口訣表大小
+size = int(input("請輸入加法口訣表大小（小於 10 的正整數）："))
 
-print("------------------------------------------------------------")
-
-for a in range(1, size + 1 ):
-    for b in range(1, size + 1 ):
-        sum = a + b        
-        print(f"{a} + {b} = {sum}  ", end=" ")
-
-    print()
-
-print("------------------------------------------------------------")
+# 列印加法口訣表
+for i in range(size + 1):
+    row = [f"{i} + {j} = {i + j}" for j in range(size + 1)]
+    # 根據和的大小調整空格
+    formatted_row = [f"{entry:<10}" for entry in row]  # 每個條目寬度設置為10
+    print("".join(formatted_row))
