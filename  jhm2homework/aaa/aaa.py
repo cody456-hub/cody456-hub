@@ -15,3 +15,4 @@ csv_filename = f"{ticker}_stock_data.csv"
 df.to_csv(csv_filename)
 
 print(f"{ticker} 的數據已保存到 {csv_filename}")
+print(SPY_history.xlsx)
