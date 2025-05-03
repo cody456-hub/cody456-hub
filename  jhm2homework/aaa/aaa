@@ -1,19 +1,15 @@
 import yfinance as yf
 
-# 設定股票代碼
-ticker = "APY"
+# 定义股票代码
+tickers = ["AAPL", "SPY", "XLK"]
 
-# 設定時間範圍
+# 设置时间范围
 start_date = "2020-01-01"
 end_date = "2025-04-25"
 
-# 下載數據
-df = yf.download(ticker, start=start_date, end=end_date)
-
-# 存為 CSV 文件
-csv_filename = f"{ticker}_stock_data.csv"
-df.to_csv(csv_filename)
-
-print(f"{ticker} 的數據已保存到 {csv_filename}")
-
+# 下载数据并保存到单独的 CSV 文件
+for ticker in tickers:
+    df = yf.download(ticker, start=start_date, end=end_date)
+    df.to_csv(f"{ticker}_stock_data.csv")
+    print(f"{ticker} 的数据已保存到 {ticker}_stock_data.csv")
 
