@@ -9,3 +9,4 @@ data = yf.download(ticker, start='2020-01-01', end='2025-04-25')
 
 # 将数据保存到 Excel 文件
 data.to_excel('SPY_history.xlsx')
+print(SPY_history.xlsx)
