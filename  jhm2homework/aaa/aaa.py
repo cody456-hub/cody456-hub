@@ -1,5 +1,4 @@
-import yfinance as yf
-
+import pandas as pd
 # 定义股票代码
 tickers = ["AAPL", "SPY", "XLK"]
 
