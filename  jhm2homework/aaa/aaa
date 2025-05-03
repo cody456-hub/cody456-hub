@@ -1,7 +1,7 @@
 import yfinance as yf
 
 # 設定股票代碼
-ticker = "AAPL"
+ticker = "APY"
 
 # 設定時間範圍
 start_date = "2020-01-01"
